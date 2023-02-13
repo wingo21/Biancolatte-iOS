@@ -10,13 +10,17 @@ import SwiftUI
 struct MapsView: View {
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("MapsView")
+        ZStack {
+            //Imposto il colore di tutto lo schermo a PrimaryColor
+            Color("PrimaryColor").edgesIgnoringSafeArea(.all)
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("MapsView")
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

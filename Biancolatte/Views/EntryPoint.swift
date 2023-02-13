@@ -11,6 +11,11 @@ struct EntryPoint: View {
     
     @State var selection = UserDefaults.standard.integer(forKey: "mainview_selection")
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(Color("SecondaryColor"))
+        UITabBar.appearance().unselectedItemTintColor = UIColor(Color("TabBarIconColor"))
+    }
+    
     var body: some View {
         VStack{
             TabView(selection: $selection) {
@@ -19,9 +24,8 @@ struct EntryPoint: View {
                 }.tabItem {
                     Image(systemName: "house")
                         .resizable()
-                        //.accentColor(Color("revogen_color"))
                     Text("Casa")
-                }.tag(1)
+                }
 
                 VStack{
                     UnknownView()
@@ -30,7 +34,7 @@ struct EntryPoint: View {
                     //TODO: IMMAGINE DEL LEONE DI BIANCOLATTE COME ICONA
                         Image(systemName: "map")
                     Text("Trovaci")
-                }.tag(2)
+                }
                 
                 VStack{
                     MapsView()
@@ -38,7 +42,7 @@ struct EntryPoint: View {
                 .tabItem {
                         Image(systemName: "square")
                     Text("Sconosciuto")
-                }.tag(3)
+                }
                 
                 VStack(spacing: 0){
                     ProfileView()//.environmentObject(userAuth)
@@ -46,9 +50,8 @@ struct EntryPoint: View {
                 .tabItem {
                         Image(systemName: "person")
                     Text("Profilo")
-                }.tag(4)
-                
-            }//.accentColor(Color("revogen_color"))
+                }
+            }
         }
     }
 }
