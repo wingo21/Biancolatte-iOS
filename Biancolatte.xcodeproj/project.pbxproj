@@ -20,10 +20,10 @@
 		71D79C12299935BA00830BD6 /* UnknownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D79C11299935BA00830BD6 /* UnknownView.swift */; };
 		71D79C222999470500830BD6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C1E2999401900830BD6 /* Localizable.strings */; };
 		71D79C2A299BB38D00830BD6 /* standardFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C24299BB38D00830BD6 /* standardFont.otf */; };
-		71D79C2B299BB38D00830BD6 /* UltraThicFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C25299BB38D00830BD6 /* UltraThicFont.otf */; };
+		71D79C2B299BB38D00830BD6 /* ultraThicFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C25299BB38D00830BD6 /* ultraThicFont.otf */; };
 		71D79C2C299BB38D00830BD6 /* regularFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C26299BB38D00830BD6 /* regularFont.otf */; };
-		71D79C2D299BB38D00830BD6 /* SubtitleFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C27299BB38D00830BD6 /* SubtitleFont.otf */; };
-		71D79C2E299BB38D00830BD6 /* ThicFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C28299BB38D00830BD6 /* ThicFont.otf */; };
+		71D79C2D299BB38D00830BD6 /* subtitleFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C27299BB38D00830BD6 /* subtitleFont.otf */; };
+		71D79C2E299BB38D00830BD6 /* thicFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C28299BB38D00830BD6 /* thicFont.otf */; };
 		71D79C2F299BB38D00830BD6 /* titleFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C29299BB38D00830BD6 /* titleFont.otf */; };
 		71D79C31299BEB0400830BD6 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D79C30299BEB0400830BD6 /* Components.swift */; };
 /* End PBXBuildFile section */
@@ -63,10 +63,10 @@
 		71D79C1D2999401900830BD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		71D79C1F2999401F00830BD6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		71D79C24299BB38D00830BD6 /* standardFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = standardFont.otf; sourceTree = "<group>"; };
-		71D79C25299BB38D00830BD6 /* UltraThicFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UltraThicFont.otf; sourceTree = "<group>"; };
+		71D79C25299BB38D00830BD6 /* ultraThicFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ultraThicFont.otf; sourceTree = "<group>"; };
 		71D79C26299BB38D00830BD6 /* regularFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = regularFont.otf; sourceTree = "<group>"; };
-		71D79C27299BB38D00830BD6 /* SubtitleFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SubtitleFont.otf; sourceTree = "<group>"; };
-		71D79C28299BB38D00830BD6 /* ThicFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThicFont.otf; sourceTree = "<group>"; };
+		71D79C27299BB38D00830BD6 /* subtitleFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtitleFont.otf; sourceTree = "<group>"; };
+		71D79C28299BB38D00830BD6 /* thicFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = thicFont.otf; sourceTree = "<group>"; };
 		71D79C29299BB38D00830BD6 /* titleFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = titleFont.otf; sourceTree = "<group>"; };
 		71D79C30299BEB0400830BD6 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		71D79C34299C087800830BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -172,9 +172,9 @@
 		71D79C23299BB30000830BD6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				71D79C25299BB38D00830BD6 /* UltraThicFont.otf */,
-				71D79C28299BB38D00830BD6 /* ThicFont.otf */,
-				71D79C27299BB38D00830BD6 /* SubtitleFont.otf */,
+				71D79C25299BB38D00830BD6 /* ultraThicFont.otf */,
+				71D79C28299BB38D00830BD6 /* thicFont.otf */,
+				71D79C27299BB38D00830BD6 /* subtitleFont.otf */,
 				71D79C29299BB38D00830BD6 /* titleFont.otf */,
 				71D79C26299BB38D00830BD6 /* regularFont.otf */,
 				71D79C24299BB38D00830BD6 /* standardFont.otf */,
@@ -288,13 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D79BE72996955200830BD6 /* Preview Assets.xcassets in Resources */,
-				71D79C2E299BB38D00830BD6 /* ThicFont.otf in Resources */,
+				71D79C2E299BB38D00830BD6 /* thicFont.otf in Resources */,
 				71D79C222999470500830BD6 /* Localizable.strings in Resources */,
 				71D79C2F299BB38D00830BD6 /* titleFont.otf in Resources */,
-				71D79C2B299BB38D00830BD6 /* UltraThicFont.otf in Resources */,
+				71D79C2B299BB38D00830BD6 /* ultraThicFont.otf in Resources */,
 				71D79BE42996955200830BD6 /* Assets.xcassets in Resources */,
 				71D79C2A299BB38D00830BD6 /* standardFont.otf in Resources */,
-				71D79C2D299BB38D00830BD6 /* SubtitleFont.otf in Resources */,
+				71D79C2D299BB38D00830BD6 /* subtitleFont.otf in Resources */,
 				71D79C2C299BB38D00830BD6 /* regularFont.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
