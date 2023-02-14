@@ -5,8 +5,8 @@
   Created by Alessandro Zanin on 12/02/23.
   
 */
-"Casa" = "Hogar";
-"Trovaci" = "Encuéntranos";
-"Sconosciuto" = "Desconocido";
-"Profilo" = "Profil";
-"Le nostre location" = "Nuestras ubicaciones";
+"Home" = "Hogar";
+"Find Us" = "Encuéntranos";
+"Unknown" = "Desconocido";
+"Profile" = "Profil";
+"Our Locations" = "Nuestras ubicaciones";

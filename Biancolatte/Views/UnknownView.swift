@@ -14,14 +14,17 @@ struct UnknownView: View {
             //Screen color set to PrimaryColor
             Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("UnknownView")
+                Text("Ultra Thic").ultraThic()
+                Text("Thic").thic()
+                Text("Title").title()
+                Text("Subtitle").subtitle()
+                Text("Regular").regular()
+                Text("Standard").standard()
             }
             .padding()
         }
     }
+    
 }
 
 struct UnknownView_Previews: PreviewProvider {

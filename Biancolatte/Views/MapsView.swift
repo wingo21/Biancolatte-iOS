@@ -5,6 +5,8 @@
 //  Created by Alessandro Zanin on 10/02/23.
 //
 
+// TODO: When opened for first time at startup, MapView causes warning "Modifying state during view update, this will cause undefined behavior."
+
 import SwiftUI
 import MapKit
 
@@ -36,7 +38,7 @@ struct MapsView: View {
             //Screen color set to PrimaryColor
             Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Le nostre location")
+                Text("Our Locations")
                 Map(coordinateRegion: $region, annotationItems: BLLocation.POI) { item in
                     MapAnnotation(coordinate: item.coordinate) {
                         ZStack {

@@ -18,6 +18,7 @@ struct EntryPoint: View {
     }
     
     var body: some View {
+        
         VStack{
             TabView(selection: $selection) {
                 VStack{
@@ -25,7 +26,7 @@ struct EntryPoint: View {
                 }.tabItem {
                     Image(systemName: "house")
                         .resizable()
-                    Text("Casa")
+                    Text("Home")
                 }
 
                 VStack{
@@ -34,7 +35,7 @@ struct EntryPoint: View {
                 .tabItem {
                     //TODO: IMMAGINE DEL LEONE DI BIANCOLATTE COME ICONA
                         Image(systemName: "map")
-                    Text("Trovaci")
+                    Text("Find Us")
                 }
                 
                 VStack{
@@ -42,7 +43,7 @@ struct EntryPoint: View {
                 }
                 .tabItem {
                         Image(systemName: "square")
-                    Text("Sconosciuto")
+                    Text("Unknown")
                 }
                 
                 VStack(spacing: 0){
@@ -50,7 +51,7 @@ struct EntryPoint: View {
                 }
                 .tabItem {
                         Image(systemName: "person")
-                    Text("Profilo")
+                    Text("Profile")
                 }
             }
         }

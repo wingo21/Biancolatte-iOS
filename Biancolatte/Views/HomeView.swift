@@ -13,13 +13,21 @@ struct HomeView: View {
         ZStack {
             //Screen color set to PrimaryColor
             Color("PrimaryColor").edgesIgnoringSafeArea(.all)
+            
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("HomeView")
+                
+                AdaptiveImage(light: Image("LionDark"), dark: Image("LionLight")).frame(width: 200, height: 200)
+
+                Spacer()
+  
+                AdaptiveImage(light: Image("NameDark"), dark: Image("NameLight")).frame(width: 350, height: 200)
+                
+                Spacer()
+                
+                AdaptiveImage(light: Image("OvalHollowDark"), dark: Image("OvalHollowLight")).frame(width: 200, height: 200)
+                
+                Spacer()
             }
-            .padding()
         }
     }
 }
