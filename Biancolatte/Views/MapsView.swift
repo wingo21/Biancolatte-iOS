@@ -38,7 +38,7 @@ struct MapsView: View {
             //Screen color set to PrimaryColor
             Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Our Locations")
+                Text("Our Locations").title()
                 Map(coordinateRegion: $region, annotationItems: BLLocation.POI) { item in
                     MapAnnotation(coordinate: item.coordinate) {
                         ZStack {

@@ -25,7 +25,6 @@ struct EntryPoint: View {
                     HomeView()
                 }.tabItem {
                     Image(systemName: "house")
-                        .resizable()
                     Text("Home")
                 }
 
@@ -33,8 +32,7 @@ struct EntryPoint: View {
                     MapsView()
                 }
                 .tabItem {
-                    //TODO: IMMAGINE DEL LEONE DI BIANCOLATTE COME ICONA
-                        Image(systemName: "map")
+                    Image(systemName: "map")
                     Text("Find Us")
                 }
                 
@@ -42,7 +40,9 @@ struct EntryPoint: View {
                     UnknownView()
                 }
                 .tabItem {
-                        Image(systemName: "square")
+                    // TODO: Chiedi alla cami di scalarla 40x40 altrimenti rimane sgranata
+                    Image("TabIconLion")
+                        .renderingMode(.template)
                     Text("Unknown")
                 }
                 
@@ -50,7 +50,7 @@ struct EntryPoint: View {
                     ProfileView()//.environmentObject(userAuth)
                 }
                 .tabItem {
-                        Image(systemName: "person")
+                    Image(systemName: "person")
                     Text("Profile")
                 }
             }
