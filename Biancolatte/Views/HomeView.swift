@@ -11,7 +11,7 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            //Imposto il colore di tutto lo schermo a PrimaryColor
+            //Screen color set to PrimaryColor
             Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             VStack {
                 Image(systemName: "globe")

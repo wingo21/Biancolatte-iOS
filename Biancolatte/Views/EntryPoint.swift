@@ -11,6 +11,7 @@ struct EntryPoint: View {
     
     @State var selection = UserDefaults.standard.integer(forKey: "mainview_selection")
     
+    //Setting visual appearence of TabBar
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color("SecondaryColor"))
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color("TabBarIconColor"))
@@ -28,7 +29,7 @@ struct EntryPoint: View {
                 }
 
                 VStack{
-                    UnknownView()
+                    MapsView()
                 }
                 .tabItem {
                     //TODO: IMMAGINE DEL LEONE DI BIANCOLATTE COME ICONA
@@ -37,7 +38,7 @@ struct EntryPoint: View {
                 }
                 
                 VStack{
-                    MapsView()
+                    UnknownView()
                 }
                 .tabItem {
                         Image(systemName: "square")
