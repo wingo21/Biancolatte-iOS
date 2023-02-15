@@ -5,8 +5,6 @@
 //  Created by Alessandro Zanin on 10/02/23.
 //
 
-// TODO: When opened for first time at startup, MapView causes warning "Modifying state during view update, this will cause undefined behavior."
-
 import SwiftUI
 import MapKit
 

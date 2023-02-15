@@ -21,37 +21,25 @@ struct EntryPoint: View {
         
         VStack{
             TabView(selection: $selection) {
-                VStack{
-                    HomeView()
-                }.tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
+                HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
                 }
 
-                VStack{
-                    MapsView()
-                }
+                MapsView()
                 .tabItem {
-                    Image(systemName: "map")
-                    Text("Find Us")
+                    Label("Find Us", systemImage: "map")
                 }
                 
-                VStack{
-                    UnknownView()
-                }
+                UnknownView()
                 .tabItem {
                     // TODO: Chiedi alla cami di scalarla 40x40 altrimenti rimane sgranata
-                    Image("TabIconLion")
-                        .renderingMode(.template)
-                    Text("Unknown")
+                    Label("Unknown", image: "TabIconLion")
                 }
                 
-                VStack(spacing: 0){
-                    ProfileView()//.environmentObject(userAuth)
-                }
+                ProfileView()//.environmentObject(userAuth)
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
+                    Label("Profile", systemImage: "person")
                 }
             }
         }
