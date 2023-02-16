@@ -4,6 +4,7 @@
 //
 //  Created by Alessandro Zanin on 10/02/23.
 //
+//  Purpouse still to be decided
 
 import SwiftUI
 

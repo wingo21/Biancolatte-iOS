@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Risorsa 4.svg",
+      "filename" : "Risorsa 5.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -20,6 +20,6 @@
   },
   "properties" : {
     "preserves-vector-representation" : true,
-    "template-rendering-intent" : "template"
+    "template-rendering-intent" : "original"
   }
 }

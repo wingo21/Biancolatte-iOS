@@ -4,6 +4,8 @@
 //
 //  Created by Alessandro Zanin on 10/02/23.
 //
+//  ProfileView contains the profile of the user and all relevant settings options and
+//  informations, such as collected points and claimed offers
 
 import SwiftUI
 

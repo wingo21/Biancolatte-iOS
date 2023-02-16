@@ -4,6 +4,7 @@
 //
 //  Created by Alessandro Zanin on 10/02/23.
 //
+//  EntryPoint manages the TabBar, acts as a starting point and hub for all other views
 
 import SwiftUI
 
@@ -34,6 +35,10 @@ struct EntryPoint: View {
                 UnknownView()
                 .tabItem {
                     // TODO: Chiedi alla cami di scalarla 40x40 altrimenti rimane sgranata
+//                    Image("TabIconLion")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 40, height: 40)
                     Label("Unknown", image: "TabIconLion")
                 }
                 

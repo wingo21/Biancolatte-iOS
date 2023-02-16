@@ -4,6 +4,8 @@
 //
 //  Created by Alessandro Zanin on 10/02/23.
 //
+//  HomeView is supposed to be the first screen the user sees when the app is opened.
+//  Here we will display relevant news, limited-time offers and promotions
 
 import SwiftUI
 

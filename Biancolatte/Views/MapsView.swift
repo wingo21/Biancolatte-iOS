@@ -4,6 +4,7 @@
 //
 //  Created by Alessandro Zanin on 10/02/23.
 //
+//  MapView provides a map that shows all Biancolatte Locations
 
 import SwiftUI
 import MapKit
@@ -40,10 +41,8 @@ struct MapsView: View {
                 Map(coordinateRegion: $region, annotationItems: BLLocation.POI) { item in
                     MapAnnotation(coordinate: item.coordinate) {
                         ZStack {
-                            // TODO: Icona Biancolatte come marker
-                            Image(systemName: "flag.circle.fill")
-                                .font(.largeTitle)
-                            
+                            // TODO: Icona Biancolatte rimane troppo piccola
+                            Image("MapIcon")
                         }
                     }
                 }
