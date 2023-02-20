@@ -13,7 +13,7 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            //Screen color set to PrimaryColor
+            //  Screen color set to PrimaryColor
             Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             
             VStack {

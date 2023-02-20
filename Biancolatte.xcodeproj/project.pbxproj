@@ -26,6 +26,7 @@
 		71D79C2E299BB38D00830BD6 /* thicFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C28299BB38D00830BD6 /* thicFont.otf */; };
 		71D79C2F299BB38D00830BD6 /* titleFont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71D79C29299BB38D00830BD6 /* titleFont.otf */; };
 		71D79C31299BEB0400830BD6 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D79C30299BEB0400830BD6 /* Components.swift */; };
+		71D79C3629A39D9400830BD6 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D79C3529A39D9400830BD6 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		71D79C29299BB38D00830BD6 /* titleFont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = titleFont.otf; sourceTree = "<group>"; };
 		71D79C30299BEB0400830BD6 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		71D79C34299C087800830BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71D79C3529A39D9400830BD6 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				71D79BE12996955100830BD6 /* EntryPoint.swift */,
 				71D79C0B2999354400830BD6 /* HomeView.swift */,
+				71D79C3529A39D9400830BD6 /* LocationView.swift */,
 				71D79C11299935BA00830BD6 /* UnknownView.swift */,
 				71D79C0F2999359200830BD6 /* MapsView.swift */,
 				71D79C0D2999357100830BD6 /* ProfileView.swift */,
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D79C102999359200830BD6 /* MapsView.swift in Sources */,
+				71D79C3629A39D9400830BD6 /* LocationView.swift in Sources */,
 				71D79C12299935BA00830BD6 /* UnknownView.swift in Sources */,
 				71D79C0E2999357100830BD6 /* ProfileView.swift in Sources */,
 				71D79C31299BEB0400830BD6 /* Components.swift in Sources */,

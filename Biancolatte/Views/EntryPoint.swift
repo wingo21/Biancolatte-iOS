@@ -11,6 +11,7 @@ import SwiftUI
 struct EntryPoint: View {
     
     @State var selection = UserDefaults.standard.integer(forKey: "mainview_selection")
+    @StateObject var mapController = MapController()
     
     //Setting visual appearence of TabBar
     init() {
@@ -21,24 +22,19 @@ struct EntryPoint: View {
     var body: some View {
         
         VStack{
-            TabView(selection: $selection) {
+            TabView {
                 HomeView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
 
-                MapsView()
+                MapsView(mapController: MapController())
                 .tabItem {
                     Label("Find Us", systemImage: "map")
                 }
                 
                 UnknownView()
                 .tabItem {
-                    // TODO: Chiedi alla cami di scalarla 40x40 altrimenti rimane sgranata
-//                    Image("TabIconLion")
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(width: 40, height: 40)
                     Label("Unknown", image: "TabIconLion")
                 }
                 
