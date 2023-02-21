@@ -35,14 +35,22 @@ struct LocationView: View {
                     }
                 }
                 
+                //  This will display an image relative to the location, currently still to be decided if it will be included
+//                VStack(alignment: .leading) {
+//                    mapController.selectedLocation!.locationImage
+//                        .resizable()
+//                        .scaledToFit()
+//                        .cornerRadius(15)
+//                }.padding()
+                
                 HStack {
                     ForEach(mapController.actions) { action in
                         Button {
                             action.handler()
                         } label: {
-                            HStack {
+                            VStack {
                                 Image(systemName: action.image)
-                                Text(action.title).standard()
+                                Text(action.title).actionButton()
                             }
                             .frame(maxWidth: .infinity)
                         }

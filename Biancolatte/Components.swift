@@ -44,37 +44,43 @@ extension Text {
     
     func ultraThic() -> some View {
         self.foregroundColor(Color("SecondaryColor"))
-        .font(getFont(size: 25, font: 1))
+            .font(getFont(size: 25, font: 1))
         }
     
     func thic() -> some View {
         self.foregroundColor(Color("SecondaryColor"))
-        .font(getFont(size: 25, font: 2))
+            .font(getFont(size: 25, font: 2))
         }
     
     func subtitle() -> some View {
         self.foregroundColor(Color("SecondaryColor"))
-        .font(getFont(size: 25, font: 3))
+            .font(getFont(size: 25, font: 3))
         }
     
     func title() -> some View {
         self.foregroundColor(Color("SecondaryColor"))
-        .font(getFont(size: 25, font: 4))
+            .font(getFont(size: 25, font: 4))
         }
     
     func regular() -> some View {
         self.foregroundColor(Color("SecondaryColor"))
-        .font(getFont(size: 25, font: 5))
+            .font(getFont(size: 25, font: 5))
         }
     
     func standard() -> some View {
         self.foregroundColor(Color("SecondaryColor"))
-        .font(getFont(size: 25, font: 0))
+            .font(getFont(size: 25, font: 0))
+        }
+    
+    func actionButton() -> some View {
+        self.foregroundColor(Color("SecondaryColor"))
+            .scaledToFit()
+            .font(getFont(size: 20, font: 0))
         }
     
     func mapFont() -> some View {
         self.foregroundColor(Color("SecondaryColor"))
-            .font(getFont(size: 13, font: 5))
+            .font(getFont(size: 13, font: 3))
             .multilineTextAlignment(.center)
             .fixedSize()
     }
@@ -113,6 +119,7 @@ struct BLLocation: Identifiable {
     let coordinate: CLLocationCoordinate2D
     let website: URL?
     let google: URL?
+    let locationImage: Image
 }
 
 class MapController: ObservableObject {

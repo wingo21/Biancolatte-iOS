@@ -11,5 +11,12 @@
 		<string>regularFont.otf</string>
 		<string>standardFont.otf</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>PrimaryColor</string>
+		<key>UILaunchScreen</key>
+		<string></string>
+	</dict>
 </dict>
 </plist>
