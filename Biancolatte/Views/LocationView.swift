@@ -4,6 +4,7 @@
 //
 //  Created by Alessandro Zanin on 20/02/23.
 //
+//  LocationView is contained in the sheet that gets called when the user taps on a Location
 
 import Foundation
 import SwiftUI
@@ -17,6 +18,8 @@ struct LocationView: View {
             Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             
             VStack {
+                
+                //  Name of location and written out address
                 HStack(alignment: .top) {
                     VStack(alignment: .leading) {
                         Text(mapController.selectedLocationName)
@@ -35,14 +38,15 @@ struct LocationView: View {
                     }
                 }
                 
-                //  This will display an image relative to the location, currently still to be decided if it will be included
-//                VStack(alignment: .leading) {
-//                    mapController.selectedLocation!.locationImage
-//                        .resizable()
-//                        .scaledToFit()
-//                        .cornerRadius(15)
-//                }.padding()
+                //  Image of the Location
+                VStack(alignment: .leading) {
+                    mapController.selectedLocation!.locationImage
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(15)
+                }.padding()
                 
+                //  Buttons: Map (links to apple maps with coordinates already filled in), Website (links to Biancolatte website), Google (links to Location Google Maps page)
                 HStack {
                     ForEach(mapController.actions) { action in
                         Button {
