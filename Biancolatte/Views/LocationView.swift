@@ -40,7 +40,7 @@ struct LocationView: View {
                 
                 //  Image of the Location
                 VStack(alignment: .leading) {
-                    mapController.selectedLocation!.locationImage
+                    mapController.selectedLocation?.locationImage
                         .resizable()
                         .scaledToFit()
                         .cornerRadius(15)
