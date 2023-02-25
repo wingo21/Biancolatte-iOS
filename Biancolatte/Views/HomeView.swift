@@ -18,15 +18,15 @@ struct HomeView: View {
             
             VStack {
                 
-                AdaptiveImage(light: Image("LionDark"), dark: Image("LionLight")).frame(width: 200, height: 200)
+                AdaptiveImage(light: Image("lionDark"), dark: Image("lionLight")).frame(width: 200, height: 200)
 
                 Spacer()
   
-                AdaptiveImage(light: Image("NameDark"), dark: Image("NameLight")).frame(width: 350, height: 200)
+                AdaptiveImage(light: Image("nameDark"), dark: Image("nameLight")).frame(width: 350, height: 200)
                 
                 Spacer()
                 
-                AdaptiveImage(light: Image("OvalHollowDark"), dark: Image("OvalHollowLight")).frame(width: 200, height: 200)
+                AdaptiveImage(light: Image("ovalHollowDark"), dark: Image("ovalHollowLight")).frame(width: 200, height: 200)
                 
                 Spacer()
             }
